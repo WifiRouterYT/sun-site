@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>guh</title>
+</head>
+<body>
+    <div id="container"><div id="topBar">
+        <marquee behavior="scroll">Did you know? Sun engineers created NFS (Network File System), which is a protocol still used in networks everywhere to share files!</marquee>
+    </div><div id="header"></div>
+        <div id="headerArea">
+            <nav id="navbar" style="margin-bottom: 0px;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ftp.html">FTP</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services / Hardware</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="flex">
+            
+            <main>
+                <h2>FTP (WIP!)</h2>
+                <p>I host a small collection of files/media I archived, as well as mirrors of Sun Microsystems related FTP sites, and a few other long shut down or cool FTP sites just for the heck of it. The FTP server can be accessed in two ways:</p>
+                <ul>
+                    <li>via HTTP at <a href="http://ftp.wifirouter.dev">http://ftp.wifirouter.dev/</a></li>
+                    <li>via your favorite FTP client (<a href="ftp://ftp.wifirouter.dev">Open</a>)</li>
+                    <ul>
+                        <li><strong>Host: </strong><code>ftp.wifirouter.dev</code></li>
+                        <li><strong>Port: </strong><code>21</code></li>
+                        <li><strong>Directory: </strong><code>/pub</code></li>
+                        <li><strong>Login: </strong><code>anonymous</code></li>
+                    </ul>
+                </ul>
+                <h3>Mirrors</h3>
+                <p>You can find information about an FTP mirror by looking for the following files in the mirrors folder:</p>
+                <ul>
+                    <li><strong>MIRRORINFO </strong>- Contains general information about the mirror (source, original site still active, when it was first added, etc.)</li>
+                    <li><strong>MIRRORSTATUS </strong>- Contains information about the mirror status (last updated, ommited/failed files, etc.)</li>
+                </ul>
+                <p>General info and summary of all of the mirrors can be found in the <strong>README</strong> file in the root of the mirrors directory. For the sake of saving storage space and bandwidth, most mirrors will be <i>partial</i> mirrors. You can request content from a partial mirror to be added if you wish.</p>
+                <p>I did not manually review all the little nooks and crannies of site mirrors, so tread carefully. I try to mirror from reputable and safe sources, but things can slip in without my (or the original site owners) knowledge.</p>
+
+                <h3>Compilations</h3>
+                <p>In the FTP server, you'll find folders with a bunch of similar files grouped together, such as Solaris packages, to help find common files from mirrors and other sources easier. These files are not symlinked for the sake of compatibility with Archie and older clients, so it's possible that if something is updated it may be missing. If that's the case, please let me know and I'll fix it.</p>
+                <h3>FAQ (frequently asked statements..? idk)</h3>
+                <ul>
+                    <li><strong>You can't be mirroring this site!</strong> Please let me know! I will gladly take it down or work out limits to prevent overloading your server.</li>
+                    <li><strong>Something's missing from this mirror!</strong> Check the mirror folder's MIRRORSTATUS page first to make sure it's not ommited, and if it's not, please contact me and I will fix it!</li>
+                    <li><strong>Can you mirror [...]?</strong> Depends on the size! Please reach out to me and I'll see what I can do.</li>
+                </ul>
+            </main>
+            
+        <aside id="leftSidebar" style="margin-right: 0px;">
+            <iframe src="pieces/sidebar.html"/></iframe>
+        </aside></div>
+        <footer id="footer" style="margin-top: 0px;">
+            <iframe src="pieces/footer.html" height="100%" width="100%"></iframe>
+        </footer>
+    </div>
+    <style>
+        #pspgif {
+            aspect-ratio: 4 / 3;
+            height: 125px;
+        }
+
+        :root {
+            --header-image: url('img/banner.jpg');
+            --body-bg-image: url('img/background.png');
+
+            /* colors */
+            --content: #43256E;
+        }
+
+        body {
+            font-family: Verdana, arial, sans-serif;
+            margin: 0;
+            background-color: #08031A;
+            background-size: 65px;
+            color: #fceaff;
+            background-image: var(--body-bg-image);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #container a {
+            color: #ED64F5;
+            font-weight: bold;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #5e4e8c;
+            height: 150px;
+            background-image: var(--header-image);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #navbar {
+            height: 40px;
+            background-color: #13092D;
+            width: 100%;
+        }
+
+        #navbar ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+
+        #navbar li {
+            padding-top: 10px;
+        }
+
+        #navbar li a {
+            color: #ED64F5;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        #navbar li a:hover {
+            color: #a49cba;
+            text-decoration: underline;
+        }
+
+        #flex {
+            display: flex;
+        }
+
+        main {
+            min-height: 500px;
+        }
+
+        aside {
+            background-color: #241445;
+            width: 200px;
+            padding: 20px;
+            font-size: smaller;
+        }
+
+
+        main {
+            background-color: #43256E;
+            flex: 1;
+            padding: 20px;
+            order: 2;
+        }
+
+        */ #leftSidebar {
+            order: 1;
+        }
+
+        #rightSidebar {
+            order: 3;
+        }
+
+        footer {
+            background-color: #13092D;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #ED64F5;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        strong {
+            color: #ED64F5;
+        }
+
+        .box {
+            background-color: #13092D;
+            border: 1px solid #ED64F5;
+            padding: 10px;
+        }
+
+
+        #topBar {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            font-size: smaller;
+            background-color: #13092D;
+        }
+
+        @media only screen and (max-width: 847px) {
+            #footer {
+                height: 128px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            #flex {
+                flex-wrap: wrap;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            main {
+                order: 1;
+            }
+
+            #leftSidebar {
+                order: 2;
+                height: 375px;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            #navbar ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</body>
+</html>
