@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://sun.wifirouter.dev/</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/index.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/ftp.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/blog.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/services.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/contact.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/pieces/sidebar.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/pieces/footer.html</loc>
+  <lastmod>2025-11-20T09:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/underconstruction.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/solarispkgs.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sun.wifirouter.dev/guestbook.html</loc>
+  <lastmod>2025-11-18T22:53:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
