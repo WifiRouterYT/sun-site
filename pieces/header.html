@@ -1,0 +1,87 @@
+<div id="topBar">
+    <marquee behavior="scroll">Did you know? Sun engineers created NFS (Network File System), which is a protocol
+        still used in networks everywhere to share files!</marquee>
+</div>
+<div id="header"></div>
+<div id="headerArea">
+    <nav id="navbar" style="margin-bottom: 0px;">
+        <ul>
+            <li><a href="../index.html" target="_top">Home</a></li>
+            <li><a href="../ftp.html" target="_top">FTP</a></li>
+            <li><a href="../blog.html" target="_top">Blog</a></li>
+            <li><a href="../services.html" target="_top">Hardware</a></li>
+            <li><a href="../contact.html" target="_top">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    :root {
+        --header-image: url('../img/banner.jpg');
+
+        /* colors */
+        --content: #43256E;
+    }
+
+    body {
+        font-family: Verdana, arial, sans-serif;
+        margin: 0;
+        background-color: #08031A;
+        background-size: 65px;
+        color: #fceaff;
+    }
+    
+    * {
+            box-sizing: border-box;
+    }
+
+    #header {
+        width: 100%;
+        background-color: #5e4e8c;
+        height: 150px;
+        background-image: var(--header-image);
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #navbar {
+        height: 40px;
+        background-color: #13092D;
+        width: 100%;
+    }
+
+    #navbar ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    #navbar li {
+        display: table-cell;
+        text-align: center;
+        width: 20%;
+        padding-top: 10px;
+    }
+
+    #navbar li a {
+        color: #ED64F5;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    #navbar li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    #topBar {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        font-size: smaller;
+        background-color: #13092D;
+    }
+</style>

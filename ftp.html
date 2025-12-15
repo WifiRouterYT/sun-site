@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>guh</title>
+    <title>wifirouter's humble home - ftp</title>
 </head>
 <body>
-    <div id="container"><div id="topBar">
-        <marquee behavior="scroll">Did you know? Sun engineers created NFS (Network File System), which is a protocol still used in networks everywhere to share files!</marquee>
-    </div><div id="header"></div>
-        <div id="headerArea">
-            <nav id="navbar" style="margin-bottom: 0px;">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ftp.html">FTP</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="services.html">Services / Hardware</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div id="container">
+        <iframe src="pieces/header.html" class="headeriframe"></iframe>
 
         <div id="flex">
             
@@ -60,7 +48,12 @@
             <iframe src="pieces/footer.html" height="100%" width="100%"></iframe>
         </footer>
     </div>
-    <style>
+<style>
+        .headeriframe {
+            height: 220px;
+            margin-bottom: -4px;
+        }
+
         #pspgif {
             aspect-ratio: 4 / 3;
             height: 125px;
@@ -97,48 +90,10 @@
             font-weight: bold;
         }
 
-        #header {
-            width: 100%;
-            background-color: #5e4e8c;
-            height: 150px;
-            background-image: var(--header-image);
-            background-size: 100%;
-            background-position: center;
-        }
-
         iframe {
             border: 0;
             width: 100%;
             height: 100%;
-        }
-
-        #navbar {
-            height: 40px;
-            background-color: #13092D;
-            width: 100%;
-        }
-
-        #navbar ul {
-            display: flex;
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            justify-content: space-evenly;
-        }
-
-        #navbar li {
-            padding-top: 10px;
-        }
-
-        #navbar li a {
-            color: #ED64F5;
-            font-weight: 800;
-            text-decoration: none;
-        }
-
-        #navbar li a:hover {
-            color: #a49cba;
-            text-decoration: underline;
         }
 
         #flex {
@@ -155,7 +110,6 @@
             padding: 20px;
             font-size: smaller;
         }
-
 
         main {
             background-color: #43256E;
@@ -196,15 +150,6 @@
             background-color: #13092D;
             border: 1px solid #ED64F5;
             padding: 10px;
-        }
-
-
-        #topBar {
-            width: 100%;
-            height: 30px;
-            padding: 10px;
-            font-size: smaller;
-            background-color: #13092D;
         }
 
         @media only screen and (max-width: 847px) {
